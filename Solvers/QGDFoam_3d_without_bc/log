@@ -1,0 +1,10 @@
++ wmake
+Making dependency list for source file QGDFoam.C
+In file included from QGDFoam.C:53:0:
+createFieldRefs.H: In function 'int main(int, char**)':
+createFieldRefs.H:6:6: warning: variable 'inviscid' set but not used [-Wunused-but-set-variable]
+ bool inviscid(true);
+      ^~~~~~~~
+QGDFoam.C:125:12: warning: unused variable 'meanCoNum' [-Wunused-variable]
+     scalar meanCoNum = 0.0;
+            ^~~~~~~~~

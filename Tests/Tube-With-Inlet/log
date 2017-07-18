@@ -1,0 +1,346 @@
+/*---------------------------------------------------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  4.1                                   |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+Build  : 4.1
+Exec   : QGDFoam
+Date   : Jul 11 2017
+Time   : 14:11:31
+Host   : "bl015.unicluster.ru"
+PID    : 2941
+Case   : /lustre/unicluster/home/d.ryazanov/QGDE/Tube-With-Inlet
+nProcs : 1
+sigFpe : Enabling floating point exception trapping (FOAM_SIGFPE).
+fileModificationChecking : Monitoring run-time modified files using timeStampMaster
+allowSystemOperations : Allowing user-supplied system call operations
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+Create time
+
+Create mesh for time = 0
+
+Reading thermophysical properties
+
+Selecting thermodynamics package 
+{
+    type            hePsiThermo;
+    mixture         pureMixture;
+    transport       const;
+    thermo          hConst;
+    equationOfState perfectGas;
+    specie          specie;
+    energy          sensibleInternalEnergy;
+}
+
+--> FOAM Warning : 
+    From function const Foam::HashTable<Foam::List<int>, Foam::word>& Foam::polyBoundaryMesh::groupPatchIDs() const
+    in file meshes/polyMesh/polyBoundaryMesh/polyBoundaryMesh.C at line 448
+    Patch empty specifies a group empty which is also a patch name. This might give problems later on.
+Reading field U
+
+Creating turbulence model
+
+Selecting turbulence model type laminar
+findNeighbours()
+calculateWeights
+calculateWeights()
+End for not parallel
+
+Starting time loop
+
+fieldAverage fieldAverage1:
+    Starting averaging at time 0
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 2e-06
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.09 s  ClockTime = 0 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 300.762215072/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 113101.023738/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.3098068118/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-5.88187104335e-15 0 0)
+    Reading/initialising field UMean
+    Reading/initialising field pMean
+    Reading/initialising field TMean
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 4e-06
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.11 s  ClockTime = 0 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 293.322409071/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 118222.552986/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.40384472282/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-1.43015325902e-14 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 6e-06
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.12 s  ClockTime = 0 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 294.17952876/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 122396.608045/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.49193298943/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-2.15808382518e-14 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 8e-06
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.14 s  ClockTime = 0 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 295.758132043/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 125744.013344/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.57424395236/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-3.00370729302e-14 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 1e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.16 s  ClockTime = 0 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 297.53802797/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 128358.804353/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.65097807071/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-4.31485595103e-14 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 1.2e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.17 s  ClockTime = 0 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 299.401502935/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 130317.395604/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.7223620161/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-5.26853177152e-14 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 1.4e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.19 s  ClockTime = 0 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 301.247738122/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 131684.373864/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.78864502855/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-6.78050793758e-14 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 1.6e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.21 s  ClockTime = 1 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 302.995053157/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 132516.120224/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.85009356534/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-7.62341764932e-14 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 1.8e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.22 s  ClockTime = 1 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 304.580989859/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 132863.008415/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.90698471296/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-9.03942652097e-14 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 2e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.24 s  ClockTime = 1 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 305.960826663/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 132770.676815/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 1.95959901011/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-1.03883878888e-13 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 2.2e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.25 s  ClockTime = 1 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 307.105146233/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 132280.719296/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 2.00821333691/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-1.16844285602e-13 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 2.4e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.27 s  ClockTime = 1 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 307.997000688/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 132931.074815/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 2.05309442529/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-1.29299935524e-13 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 2.6e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.29 s  ClockTime = 1 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 308.629083854/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 136698.147358/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 2.09449338839/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-1.44215703935e-13 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 2.8e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.31 s  ClockTime = 1 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 309.001173557/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 140408.990107/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 2.13264149235/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-1.55430776725e-13 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+Courant Number = 0
+Delta T: 2e-06
+Time = 3e-05
+
+diagonal:  Solving for rho, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoUx, Initial residual = 0, Final residual = 0, No Iterations 0
+diagonal:  Solving for rhoE, Initial residual = 0, Final residual = 0, No Iterations 0
+ExecutionTime = 0.32 s  ClockTime = 1 s
+
+max/min T = max(T) [0 0 0 1 0 0 0] 309.117978792/min(T) [0 0 0 1 0 0 0] 163.5
+max/min p = max(p) [1 -1 -2 0 0 0 0] 144040.07294/min(p) [1 -1 -2 0 0 0 0] 46632
+max/min rho = max(rho) [1 -3 0 0 0 0 0] 2.16774723316/min(rho) [1 -3 0 0 0 0 0] 0.993413983046
+max/min U = max(U) [0 1 -1 0 0 0 0] (512.3 0 0)/min(U) [0 1 -1 0 0 0 0] (-1.66346412493e-13 0 0)
+fieldAverage fieldAverage1 write:
+    Calculating averages
+
+    Writing average fields
+
+
+End
+

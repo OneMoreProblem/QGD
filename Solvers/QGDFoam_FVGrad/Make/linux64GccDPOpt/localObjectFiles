@@ -1,0 +1,3 @@
+LOCAL_OBJECTS = \
+extendedFaceStencil.o\
+QGDFoam.o

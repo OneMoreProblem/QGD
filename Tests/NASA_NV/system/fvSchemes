@@ -1,0 +1,95 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+| =========                 |                                                 |
+| \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox           |
+|  \\    /   O peration     | Version:  2.3.0                                 |
+|   \\  /    A nd           | Web:      www.OpenFOAM.org                      |
+|    \\/     M anipulation  |                                                 |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      fvSchemes;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+fluxScheme          Kurganov;
+
+ddtSchemes
+{
+    default         Euler;
+}
+
+gradSchemes
+{
+    default         Gauss linear;
+}
+
+scalarScheme vanLeer;//vanAlbada;
+vectorScheme vanLeerV;//vanAlbadaV;
+
+divSchemes
+{
+    default         none;
+    div((-devRhoReff&U))	  Gauss linear;
+    div((muEff*dev2(T(grad(U))))) Gauss linear;
+    
+    //for OpenFOAM v.3.0.1+
+    div(((rho*nuEff)*dev2(T(grad(U))))) Gauss linear;
+    div(phi_nei,U) 	Gauss $vectorScheme;
+    div(phi_own,U) 	Gauss $vectorScheme;
+    
+    div(phi_nei,h)	Gauss $scalarScheme;
+    div(phi_own,h)	Gauss $scalarScheme;
+    div(phi_nei,K)	Gauss $scalarScheme;  
+    div(phi_own,K)	Gauss $scalarScheme;
+
+    div(phid_nei,p)	Gauss $scalarScheme;
+    div(phid_own,p)	Gauss $scalarScheme;
+    
+    div(phi,k)	        Gauss $scalarScheme;
+    div(phi,epsilon)	Gauss $scalarScheme;
+    div(phi,omega)	Gauss $scalarScheme;
+    
+    div(tauMC)          Gauss linear;
+}
+
+laplacianSchemes
+{
+    default         Gauss linear corrected;
+}
+
+interpolationSchemes
+{
+    default         linear;
+    
+    reconstruct(rho)		$scalarScheme;
+    reconstruct(T)		$scalarScheme;
+    reconstruct(p)		$scalarScheme;
+    reconstruct(U)		$vectorScheme;
+    reconstruct(Dp)		$scalarScheme;
+    reconstruct(rho*U)		$vectorScheme;
+}
+
+snGradSchemes
+{
+    default         corrected;
+}
+
+fluxRequired
+{
+    default	none;
+    p;
+}
+
+//----
+
+wallDist
+{
+    method	meshWave;
+}
+    
+
+// ************************************************************************* //
