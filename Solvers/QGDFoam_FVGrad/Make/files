@@ -1,3 +1,0 @@
-QGDFoam_FVGrad.C
-
-EXE = $(FOAM_USER_APPBIN)/QGDFoam_FVGrad

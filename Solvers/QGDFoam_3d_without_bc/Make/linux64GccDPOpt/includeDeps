@@ -1,2 +1,0 @@
-include faceGrad/extendedFaceStencil.dep
-include QGDFoam.dep

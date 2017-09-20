@@ -1,3 +1,0 @@
-OBJECTS = \
-$(OBJECTS_DIR)/extendedFaceStencil.o\
-$(OBJECTS_DIR)/QGDFoam.o
